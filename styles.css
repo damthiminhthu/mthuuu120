@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image:url('https://png.pngtree.com/background/20210715/original/pngtree-simple-watercolor-clean-background-picture-image_1292079.jpg') ;
+    background-size: cover; /* Đảm bảo ảnh nền phủ kín */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn trang */
+}
+
+
+h1 {
+    font-size: 2.9rem;
+    color:#7e5454;
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 3cm; /* Khoảng cách dưới tiêu đề là 5cm */
+}
+
+main {
+    padding: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử quấn lại */
+    justify-content: center; /* Căn giữa các thành viên */
+    gap: 20px; /* Khoảng cách giữa các ảnh */
+}
+
+.member {
+    text-align: center;
+    padding: 15px;
+    width: 200px; /* Chiều rộng cố định cho từng ảnh thành viên */
+    flex: 1 1 45%; /* Để hai ảnh trong một hàng, mỗi ảnh chiếm khoảng 45% */
+    max-width: 200px; /* Đảm bảo không vượt quá 200px */
+}
+
+
+.member h2 {
+    margin: 10px 0;
+}
+
+.member-detail {
+    text-align: center;
+}
+
+.member-detail img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.profile-pic {
+    border-radius: 50%; /* Cắt ảnh thành hình tròn */
+    width: 140px; /* Đặt chiều rộng ảnh */
+    height: 140px; /* Đặt chiều cao ảnh */
+    margin-bottom: 10px; /* Khoảng cách dưới ảnh */
+
+}
